@@ -15,7 +15,7 @@ export function Hero() {
   ];
  
   return (
-    <section id="home" className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col justify-center px-6 pt-28 pb-20">
+    <section id="home" className="relative mx-auto flex min-h-screen w-[60vh] max-w-6xl flex-col justify-center px-6 pt-28 pb-20">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
