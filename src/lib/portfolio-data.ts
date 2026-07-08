@@ -18,11 +18,11 @@ export const interests = [
   "Low Latency Computing",
   "GPU Computing & Parallel Systems",
   "Performance Optimization",
-  "Distributed Systems & Scalable Infrastructure",
+  "Machine Learning & Distributed Systems",
 ];
 
 export const about = [
-  "I build high performance systems with experience spanning machine learning and software engineering. My interests focus on GPU systems, low latency computing, and performance optimization for scalable infrastructure.",
+  "I build high performance systems with experience spanning machine learning and software engineering. My interests focus on GPU systems, low latency computing, and machine learning for scalable infrastructure.",
   "I enjoy understanding how systems operate internally and building infrastructure that improves performance, efficiency, and scalability.",
   "Outside of technology, I lead teams, stay driven through running and lifting, document the journey, and capture perspectives through photography.",
 ];
@@ -91,14 +91,14 @@ export const projects = [
   },
   {
     title: "Real-Time Vehicle Detection & Counting",
-    tag: "Springer Publication · ICDSA",
+    tag: "Springer · ICDSA",
     description:
       "YOLOv8-based traffic analytics pipeline for real-time congestion monitoring with centroid-based multi-object tracking.",
     tech: ["YOLOv8", "Computer Vision"],
   },
   {
     title: "Ethical AI Vision System",
-    tag: "Team Lead · 4 Engineers",
+    tag: "Team Lead",
     description:
       "Led a four-member global team developing AI-powered driver monitoring achieving 95% detection accuracy. Integrated OpenCV and TensorFlow pipelines for real-time eye tracking with fairness and bias mitigation review.",
     tech: ["OpenCV", "TensorFlow"],
