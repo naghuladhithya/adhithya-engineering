@@ -12,6 +12,8 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
+const SITE_URL = "https://naghuladhithya.vercel.app";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -72,6 +74,36 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Naghul Adhithya Venkateswaran",
+  url: SITE_URL,
+  jobTitle: "Systems Engineer",
+  affiliation: {
+    "@type": "CollegeOrUniversity",
+    name: "University of Illinois Urbana-Champaign",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "University of Illinois Urbana-Champaign",
+  },
+  email: "mailto:nav5@illinois.edu",
+  sameAs: [
+    "https://github.com/naghuladhithya",
+    "https://linkedin.com/in/naghuladhithya",
+    "https://instagram.com/naghuladhithya__",
+    "https://x.com/naghuladhithya_",
+  ],
+  knowsAbout: [
+    "GPU Computing",
+    "Low Latency Systems",
+    "Distributed Systems",
+    "Machine Learning",
+    "Systems Engineering",
+  ],
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -84,6 +116,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "CS & Data Science at UIUC. High-performance systems engineering across GPU computing, low-latency execution, machine learning & distributed infrastructure.",
       },
       { name: "author", content: "Naghul Adhithya Venkateswaran" },
+      {
+        name: "keywords",
+        content:
+          "Naghul Adhithya Venkateswaran, systems engineer, GPU computing, low latency systems, distributed systems, UIUC, portfolio, machine learning engineer",
+      },
+      { name: "robots", content: "index, follow" },
+
       { property: "og:title", content: "Naghul Adhithya Venkateswaran" },
       {
         property: "og:description",
@@ -91,19 +130,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "CS & Data Science at UIUC. GPU computing, low-latency systems, machine learning & distributed infrastructure.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:image", content: `${SITE_URL}/og-image.png` },
+      { property: "og:site_name", content: "Naghul Adhithya Venkateswaran" },
+
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Naghul Adhithya Venkateswaran" },
+      {
+        name: "twitter:description",
+        content:
+          "CS & Data Science at UIUC. GPU computing, low-latency systems, machine learning & distributed infrastructure.",
+      },
+      { name: "twitter:image", content: `${SITE_URL}/og-image.png` },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.jpg", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.jpg", type: "image/jpeg" },
+      { rel: "canonical", href: SITE_URL },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(personJsonLd),
       },
     ],
   }),
