@@ -12,7 +12,7 @@ export function Contact() {
     { label: "X", value: "x.com/naghuladhithya_", href: profile.links.twitter, icon: Twitter },
   ];
   return (
-    <Section id="contact" eyebrow="06 — Contact" title="Contact">
+    <Section id="contact" title="Contact">
       <div className="grid gap-12 md:grid-cols-[1fr_1.2fr]">
         <Reveal>
           <div>
