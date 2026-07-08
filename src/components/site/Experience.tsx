@@ -23,7 +23,7 @@ export function Experience() {
               <span className="absolute left-0 top-2 grid h-4 w-4 place-items-center rounded-full bg-background ring-1 ring-primary/50 md:h-6 md:w-6">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary md:h-2 md:w-2" />
               </span>
-              <div className="card-ring card-ring-hover group p-6 md:p-8">
+              <div className="card-ring card-ring-hover card-hi group p-6 md:p-8">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                   <div className="min-w-0">
                     <h3 className="text-lg font-semibold tracking-tight md:text-xl">{exp.title}</h3>

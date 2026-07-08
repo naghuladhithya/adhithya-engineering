@@ -7,7 +7,7 @@ export function Education() {
   return (
     <Section id="education" eyebrow="02 — Education" title="Education">
       <Reveal>
-        <div className="card-ring card-ring-hover group overflow-hidden p-8 md:p-10">
+        <div className="card-ring card-ring-hover card-hi group overflow-hidden p-8 md:p-10">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="flex items-start gap-5">
               <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-primary/25 to-violet/20 ring-1 ring-border">

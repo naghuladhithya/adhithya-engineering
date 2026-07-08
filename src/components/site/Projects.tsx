@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { projects } from "@/lib/portfolio-data";
 import { Section } from "./Section";
 import { Stagger, StaggerItem } from "./Reveal";
+import { TiltCard } from "./TiltCard";
 
 export function Projects() {
   return (
@@ -9,11 +10,7 @@ export function Projects() {
       <Stagger className="grid gap-6 md:grid-cols-2">
         {projects.map((p, i) => (
           <StaggerItem key={p.title} className={i === 0 ? "md:col-span-2" : ""}>
-            <article className="card-ring card-ring-hover group relative h-full overflow-hidden p-7 md:p-8">
-              <div
-                className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{ background: "radial-gradient(600px circle at 30% 0%, oklch(0.7 0.15 245 / 0.08), transparent 60%)" }}
-              />
+            <TiltCard max={2.5} className="card-ring card-ring-hover card-hi relative h-full overflow-hidden p-7 md:p-8">
               <div className="relative flex items-start justify-between gap-4">
                 <div>
                   <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">{p.tag}</p>
@@ -29,7 +26,7 @@ export function Projects() {
                   </span>
                 ))}
               </div>
-            </article>
+            </TiltCard>
           </StaggerItem>
         ))}
       </Stagger>

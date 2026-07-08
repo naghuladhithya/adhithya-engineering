@@ -1,6 +1,7 @@
 import { skills } from "@/lib/portfolio-data";
 import { Section } from "./Section";
 import { Stagger, StaggerItem } from "./Reveal";
+import { TiltCard } from "./TiltCard";
 
 export function Skills() {
   return (
@@ -8,7 +9,7 @@ export function Skills() {
       <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((group) => (
           <StaggerItem key={group.category}>
-            <div className="card-ring card-ring-hover group h-full p-6">
+            <TiltCard max={2.5} className="card-ring card-ring-hover card-hi h-full p-6">
               <div className="mb-5 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary" />
                 <h3 className="text-sm font-semibold uppercase tracking-[0.15em] text-foreground/90">
@@ -25,7 +26,7 @@ export function Skills() {
                   </span>
                 ))}
               </div>
-            </div>
+            </TiltCard>
           </StaggerItem>
         ))}
       </Stagger>
