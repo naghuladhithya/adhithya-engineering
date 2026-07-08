@@ -14,12 +14,7 @@ export const profile = {
   },
 };
 
-export const interests = [
-  "Low Latency Computing",
-  "GPU Computing & Parallel Systems",
-  "Performance Optimization",
-  "Machine Learning & Distributed Systems",
-];
+
 
 export const about = [
   "I build high performance systems with experience spanning machine learning and software engineering. My interests focus on GPU systems, low latency computing, and machine learning for scalable infrastructure.",
