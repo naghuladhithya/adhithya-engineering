@@ -6,7 +6,7 @@ export const profile = {
     "Focused on high-performance systems engineering across GPU-accelerated computing, low-latency execution, distributed systems, and scalable infrastructure.",
   email: "nav5@illinois.edu",
   links: {
-    resume: "/Naghul_Adhithya_Venkateswaran_Resume.pdf,
+    resume: "/Naghul_Adhithya_Venkateswaran_Resume.pdf",
     github: "https://github.com/naghuladhithya",
     linkedin: "https://linkedin.com/in/naghuladhithya",
     instagram: "https://instagram.com/naghuladhithya__",
