@@ -77,21 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Naghul Adhithya Venkateswaran — Systems Engineering" },
+      { title: "Naghul Adhithya Venkateswaran" },
       {
         name: "description",
         content:
-          "CS & Data Science at UIUC. High-performance systems engineering across GPU computing, low-latency execution, and scalable distributed infrastructure.",
+          "CS & Data Science at UIUC. High-performance systems engineering across GPU computing, low-latency execution, machine learning & distributed infrastructure.",
       },
       { name: "author", content: "Naghul Adhithya Venkateswaran" },
-      { property: "og:title", content: "Naghul Adhithya Venkateswaran — Systems Engineering" },
+      { property: "og:title", content: "Naghul Adhithya Venkateswaran" },
       {
         property: "og:description",
         content:
-          "CS & Data Science at UIUC. GPU computing, low-latency systems, and scalable distributed infrastructure.",
+          "CS & Data Science at UIUC. GPU computing, low-latency systems, machine learning & distributed infrastructure.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [
       {
