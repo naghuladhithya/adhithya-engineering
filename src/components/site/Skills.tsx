@@ -5,7 +5,7 @@ import { TiltCard } from "./TiltCard";
 
 export function Skills() {
   return (
-    <Section id="skills" eyebrow="05 — Capabilities" title="Skills">
+    <Section id="skills" title="Skills">
       <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((group) => (
           <StaggerItem key={group.category}>
