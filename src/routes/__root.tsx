@@ -134,7 +134,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:image", content: `${SITE_URL}/og-image.png` },
       { property: "og:site_name", content: "Naghul Adhithya Venkateswaran" },
 
-      { name: "twitter:card", content: "summary" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Naghul Adhithya Venkateswaran" },
       {
         name: "twitter:description",
