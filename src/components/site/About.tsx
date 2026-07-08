@@ -4,7 +4,7 @@ import { Reveal } from "./Reveal";
 
 export function About() {
   return (
-    <Section id="about" About" title="About">
+    <Section id="about" title="About">
       <div className="grid gap-12 md:grid-cols-[1fr_1.4fr]">
         <Reveal>
           <p className="font-serif text-3xl leading-snug text-foreground/90 md:text-4xl">
