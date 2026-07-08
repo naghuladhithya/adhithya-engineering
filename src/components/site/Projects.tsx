@@ -6,7 +6,7 @@ import { TiltCard } from "./TiltCard";
 
 export function Projects() {
   return (
-    <Section id="projects" eyebrow="04 — Selected Work" title="Projects & Research">
+    <Section id="projects" title="Projects & Research">
       <Stagger className="grid gap-6 md:grid-cols-2">
         {projects.map((p, i) => (
           <StaggerItem key={p.title} className={i === 0 ? "md:col-span-2" : ""}>
