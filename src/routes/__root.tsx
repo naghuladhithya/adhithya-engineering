@@ -121,6 +121,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Naghul Adhithya Venkateswaran, systems engineer, GPU computing, low latency systems, distributed systems, UIUC, portfolio, machine learning engineer",
       },
+      { name: "theme-color", content: "#0a0a10" },
       { name: "robots", content: "index, follow" },
 
       { property: "og:title", content: "Naghul Adhithya Venkateswaran" },
