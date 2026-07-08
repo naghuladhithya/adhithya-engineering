@@ -7,7 +7,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 export function Experience() {
   return (
-    <Section id="experience" eyebrow="03 — Experience" title="Experience">
+    <Section id="experience" title="Experience">
       <div className="relative">
         <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-primary/50 via-border to-transparent md:left-[11px]" />
         <div className="space-y-10">
