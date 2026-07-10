@@ -3,7 +3,7 @@ export const profile = {
   role: "CS & Data Science @ University of Illinois Urbana–Champaign",
   status: "Seeking Summer/Fall 2027 Internship Roles",
   description:
-    "Focused on machine learning & high-performance systems across GPU-accelerated computing, low-latency execution, distributed systems, and scalable infrastructure.",
+    "Focused on machine learning & high-performance systems across GPU-accelerated computing, low-latency execution, and distributed systems.",
   email: "nav5@illinois.edu",
   links: {
     resume: "/Naghul_Adhithya_Venkateswaran_Resume.pdf",
